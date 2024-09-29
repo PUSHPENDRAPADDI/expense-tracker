@@ -35,7 +35,7 @@ export const Balance = () => {
     if (total > inputValue) {
       setIsExpenceOver(true)
     }
-  }, [total])
+  }, [total, inputValue])
   return (
     <>
       {isExpenseOver && <div className={`modal modal-warning`}>
